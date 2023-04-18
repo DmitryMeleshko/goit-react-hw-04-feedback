@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import {Box, Button} from './FeedbackOptions.styled';
 import shortid from 'shortid';
 
-export const FeedbackOptions = ({option, onLeaveFeedback}) => {
+export const FeedbackOptions = ({options, onLeaveFeedback}) => {
     return (
         <Box>
-            {FeedbackOptions.map(option => (
+            {options.map(option => (
                 <Button
                 key={shortid.generate()}
                 type="button"

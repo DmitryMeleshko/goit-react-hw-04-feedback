@@ -1,14 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import {List, Boxes, Text} from './statistics.styled';
 
-export const Statistics = ({
-    good,
-    neutral,
-    bad,
-    total,
-    positivePercentage,
-}) => {
+export function  Statistics ({ good, neutral, bad, total, positivePercentage,}) {
     return (
         <Boxes>
             <List>
@@ -30,7 +23,7 @@ export const Statistics = ({
             </List>
         </Boxes>
     );
-};
+}
 
 Statistics.propTypes = {
     good: PropTypes.number.isRequired,
